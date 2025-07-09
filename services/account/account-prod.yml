@@ -1,0 +1,19 @@
+service:
+  info: Account Microservice (Production)
+  
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:9002/account-services
+    username: account
+    password: qwer
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:1689/realms/dms
+server:
+  port: 8080
