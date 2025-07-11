@@ -7,7 +7,7 @@ spring:
       ddl-auto: update
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:9002/account-services
+    url: jdbc:postgresql://localhost:5555/db_account
     username: account
     password: qwer
   security:
@@ -16,4 +16,4 @@ spring:
         jwt:
           issuer-uri: http://localhost:1689/realms/dms
 server:
-  port: 9001
+  port: 16801
